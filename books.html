@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-Library Books</title>
+</head>
+<body>
+    <h1>Book List</h1>
+    <ul>
+        {% for book in books %}
+            <li>
+                <strong>{{ book.title }}</strong> by {{ book.author }}<br>
+                {{ book.description }}<br>
+                Location: {{ book.location }}
+            </li>
+        {% endfor %}
+    </ul>
+    
+    <a href="/">Back to Home</a>
+</body>
+</html>
